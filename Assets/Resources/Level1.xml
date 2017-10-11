@@ -1,0 +1,99 @@
+<level>
+	<levelInfo>
+		<id>1</id>
+		<name>LevelOne</name>
+		<bpm>128.0</bpm>
+		<offset>120</offset>
+		<audioFile>deadmau5 - Aural Psynapse (ATTLAS Remix)</audioFile>
+	</levelInfo>
+	
+	<hazardList>
+		<hazard bar="5.0">
+		<object>
+			<objectName>Cube</objectName>
+			<spawnSide>up</spawnSide>
+			<spawnPosition>2</spawnPosition>
+		</object>
+		<object>
+			<objectName>Cube</objectName>
+			<spawnSide>up</spawnSide>
+			<spawnPosition>8</spawnPosition>
+		</object>
+		</hazard>
+		<hazard bar="6.0">
+		<object>
+			<objectName>Cube</objectName>
+			<spawnSide>up</spawnSide>
+			<spawnPosition>3</spawnPosition>
+		</object>
+		<object>
+			<objectName>Cube</objectName>
+			<spawnSide>up</spawnSide>
+			<spawnPosition>7</spawnPosition>
+		</object>
+		</hazard>
+		<hazard bar="7.0">
+		<object>
+			<objectName>Cube</objectName>
+			<spawnSide>up</spawnSide>
+			<spawnPosition>4</spawnPosition>
+		</object>
+		<object>
+			<objectName>Cube</objectName>
+			<spawnSide>up</spawnSide>
+			<spawnPosition>6</spawnPosition>
+		</object>
+		</hazard>
+		<hazard bar="8.0">
+		<object>
+			<objectName>Cube</objectName>
+			<spawnSide>up</spawnSide>
+			<spawnPosition>5</spawnPosition>
+		</object>
+		</hazard>
+		<hazard bar="13.0">
+		<object>
+			<objectName>Cube</objectName>
+			<spawnSide>down</spawnSide>
+			<spawnPosition>2</spawnPosition>
+		</object>
+		<object>
+			<objectName>Cube</objectName>
+			<spawnSide>down</spawnSide>
+			<spawnPosition>8</spawnPosition>
+		</object>
+		<object>
+			<objectName>Cube</objectName>
+			<spawnSide>right</spawnSide>
+			<spawnPosition>7</spawnPosition>
+		</object>
+		<object>
+			<objectName>Cube</objectName>
+			<spawnSide>left</spawnSide>
+			<spawnPosition>9</spawnPosition>
+		</object>
+		</hazard>
+		<hazard bar="17.0">
+		<object>
+			<objectName>Follower</objectName>
+			<spawnSide>down</spawnSide>
+			<spawnPosition>5</spawnPosition>
+		</object>
+		<object>
+			<objectName>Follower</objectName>
+			<spawnSide>up</spawnSide>
+			<spawnPosition>5</spawnPosition>
+		</object>
+		<object>
+			<objectName>Follower</objectName>
+			<spawnSide>right</spawnSide>
+			<spawnPosition>5</spawnPosition>
+		</object>
+		<object>
+			<objectName>Follower</objectName>
+			<spawnSide>left</spawnSide>
+			<spawnPosition>5</spawnPosition>
+		</object>
+		</hazard>
+	</hazardList>
+  </level>
