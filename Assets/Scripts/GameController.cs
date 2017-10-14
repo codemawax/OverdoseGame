@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.IO;
+using UnityEngine.SceneManagement;
 
 
 public class GameController : MonoBehaviour
@@ -18,17 +20,20 @@ public class GameController : MonoBehaviour
     private Hazard nextHazard;
     private int hazardNumber = 0;
     private bool isPlaying = false;
+    private bool gameStarted = false;
     private float songTimer = 0.0F;
     private int beatIndex = 0;
 
     public Light whiteSpot;
     public Light redSpot;
 
-
     public Text livesText;
     public Text beatCounterText;
 
     private int differentHazardNb;
+
+    public GameObject prefabButton;
+    public RectTransform parentPanel;
 
 
     public struct Level
@@ -59,16 +64,72 @@ public class GameController : MonoBehaviour
 
     void Start ()
     {
+        int levelCount = LevelCount();
+        for (int i = 0; i < levelCount; i++)
+        {
+            AddMenuButton(i);
+        }
+
+       
+    }
+
+
+    public static int LevelCount()
+    {
+        DirectoryInfo d = new DirectoryInfo("Assets/Resources");
+        FileInfo[] fis = d.GetFiles("*.xml");
+        return fis.Length;
+    }
+
+    void AddMenuButton(int i)
+    {
+        GameObject goButton = (GameObject)Instantiate(prefabButton);
+        goButton.transform.SetParent(parentPanel, false);
+        goButton.transform.localScale = new Vector3(1, 1, 1);
+
+        Button tempButton = goButton.GetComponent<Button>();
+        int tempInt = i + 1;
+        Text tempText = tempButton.GetComponentInChildren<Text>();
+        tempText.text = "Level " + tempInt;
+        tempButton.onClick.AddListener(() => StartLevel(tempInt));
+    }
+
+
+
+
+    void StartLevel (int levelIndex)
+    {
+        StartCoroutine("DragMenu");
+
         lives = startLives;
         livesText.text = lives.ToString();
 
-        LoadLevel(2);
+        LoadLevel(levelIndex);
 
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = (AudioClip)Resources.Load("Audio/" + currentLevel.audioFile);
         audioSource.Play();
         isPlaying = true;
+        gameStarted = true;
     }
+
+
+
+    IEnumerator DragMenu()
+    {
+        float elapsedTime = 0;
+        float menuSpeed = 8.0F;
+        Vector3 menuTargetPosition = new Vector3(0, -500, 0);
+
+        while (elapsedTime < menuSpeed)
+        {
+            parentPanel.localPosition = Vector3.Lerp(parentPanel.localPosition, menuTargetPosition, (elapsedTime / menuSpeed));
+            elapsedTime += Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
+    }
+
+
 
 
     void LoadLevel(int levelId)
@@ -122,23 +183,30 @@ public class GameController : MonoBehaviour
 
     void Update ()
     {
-        songTimer = audioSource.time;
-        if (isPlaying && (songTimer - (currentLevel.offset / 1000.0) > (beatIndex * 60.0F / currentLevel.bpm) ) )
+        if (gameStarted)
         {
-            ++beatIndex;
-            StartCoroutine("Beat");
-            StartCoroutine("BeatFlash");
-            StartCoroutine("ChangeSpot");
-            beatCounterText.text = beatIndex.ToString();
+            songTimer = audioSource.time;
+            if (isPlaying && (songTimer - (currentLevel.offset / 1000.0) > (beatIndex * 60.0F / currentLevel.bpm)))
+            {
+                ++beatIndex;
+                StartCoroutine("Beat");
+                StartCoroutine("ChangeSpot");
+                beatCounterText.text = beatIndex.ToString();
+            }
+            else if (!isPlaying && !audioSource.isPlaying)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
         }
     }
 
 
     IEnumerator Beat()
     {
-        if (hazardNumber > currentLevel.levelArray.Count - 1)
+        if (hazardNumber > currentLevel.levelArray.Count - 2)
         {
-            isPlaying = true;
+            Debug.Log("End");
+            isPlaying = false;
         }
         else if (nextHazard.bar <= beatIndex)
         {
@@ -148,15 +216,7 @@ public class GameController : MonoBehaviour
         }
         yield return null;
     }
-
-
-    IEnumerator BeatFlash()
-    {
-      
-        //TODO flash en rythme
-
-        yield return null;
-    }
+    
 
     IEnumerator ChangeSpot()
     {
@@ -204,6 +264,7 @@ public class GameController : MonoBehaviour
     {
         lives = startLives;
         livesText.text = lives.ToString();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 
