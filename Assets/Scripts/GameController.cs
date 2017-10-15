@@ -21,8 +21,12 @@ public class GameController : MonoBehaviour
     private int hazardNumber = 0;
     private bool isPlaying = false;
     private bool gameStarted = false;
+    private bool immunity = false;
     private float songTimer = 0.0F;
-    private int beatIndex = 0;
+    private float beatIndex = 0;
+    public float immunityTime = 2.0F;
+    private int levelIndex;
+    private bool coroutineRunning = false;
 
     public Light whiteSpot;
     public Light redSpot;
@@ -32,10 +36,14 @@ public class GameController : MonoBehaviour
 
     private int differentHazardNb;
 
+    private GameObject playerInstance;
+    private Material playerMaterial;
+
     public GameObject prefabButton;
     public RectTransform parentPanel;
+    public RectTransform endMenuPanel;
 
-
+    // Data struct for a level
     public struct Level
     {
         public int id;
@@ -46,24 +54,29 @@ public class GameController : MonoBehaviour
         public ArrayList levelArray;
     };
 
+    // Data struct for Hazards
     public struct Hazard
     {
         public float bar;
         public ArrayList hazardObjects;
     };
 
+    // Data struct for each objects in a Hazard
     public struct HazardObject
     {
         public string objectName;
         public string spawnSide;
         public float spawnPosition;
+        public float speed;
+        public float rotation;
+        public string color;
     };
-
-
 
 
     void Start ()
     {
+       
+        // Create level buttons dynamically
         int levelCount = LevelCount();
         for (int i = 0; i < levelCount; i++)
         {
@@ -73,7 +86,7 @@ public class GameController : MonoBehaviour
        
     }
 
-
+    // Counts how many ".xml" files there are in Resources directory
     public static int LevelCount()
     {
         DirectoryInfo d = new DirectoryInfo("Assets/Resources");
@@ -81,6 +94,7 @@ public class GameController : MonoBehaviour
         return fis.Length;
     }
 
+    // Adds button to menu panel
     void AddMenuButton(int i)
     {
         GameObject goButton = (GameObject)Instantiate(prefabButton);
@@ -91,19 +105,28 @@ public class GameController : MonoBehaviour
         int tempInt = i + 1;
         Text tempText = tempButton.GetComponentInChildren<Text>();
         tempText.text = "Level " + tempInt;
-        tempButton.onClick.AddListener(() => StartLevel(tempInt));
+        tempButton.onClick.AddListener(() => StartLevelButton(tempInt));
     }
 
 
-
-
-    void StartLevel (int levelIndex)
+    void StartLevelButton(int buttonIndex)
     {
-        StartCoroutine("DragMenu");
+        levelIndex = buttonIndex;
+        StartCoroutine(DragMenu(parentPanel, new Vector3(0, -700, 0), 2.0F));
+        StartLevel();
+    }
+
+
+    // Start level by loading a level, starting music and transform the cursor
+    void StartLevel ()
+    {
+        playerInstance = Instantiate(Resources.Load("Player", typeof(GameObject))) as GameObject;
+        playerMaterial = playerInstance.GetComponent<MeshRenderer>().material;
 
         lives = startLives;
         livesText.text = lives.ToString();
-
+        beatIndex = 0;
+        hazardNumber = 0;
         LoadLevel(levelIndex);
 
         audioSource = GetComponent<AudioSource>();
@@ -113,32 +136,52 @@ public class GameController : MonoBehaviour
         gameStarted = true;
     }
 
-
-
-    IEnumerator DragMenu()
+    // Retry level button
+    public void RestartLevel()
     {
-        float elapsedTime = 0;
-        float menuSpeed = 8.0F;
-        Vector3 menuTargetPosition = new Vector3(0, -500, 0);
+        StartCoroutine(DragMenu(endMenuPanel, new Vector3(0, 700, 0), 2.0F));
+        StartLevel();
+    }
 
-        while (elapsedTime < menuSpeed)
-        {
-            parentPanel.localPosition = Vector3.Lerp(parentPanel.localPosition, menuTargetPosition, (elapsedTime / menuSpeed));
-            elapsedTime += Time.deltaTime;
-            yield return new WaitForEndOfFrame();
-        }
+    // Back to menu button
+    public void BackToMenu()
+    {
+        // TODO Coroutines problem
+        StartCoroutine(DragMenu(endMenuPanel, new Vector3(0, 700, 0), 2.0F));
+        StartCoroutine(DragMenu(parentPanel, new Vector3(0, 0, 0), 2.0F));
     }
 
 
 
 
+    // Move the menu away
+    IEnumerator DragMenu(RectTransform panel, Vector3 targetPosition, float dragTime)
+    {
+        while (coroutineRunning)
+        {
+            yield return new WaitForSeconds(0.1f);
+        }
+        coroutineRunning = true;
+        float elapsedTime = 0;
+        while (elapsedTime < dragTime)
+        {
+            panel.localPosition = Vector3.Lerp(panel.localPosition, targetPosition, (elapsedTime / dragTime));
+            elapsedTime += Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
+        coroutineRunning = false;
+    }
+
+
+
+    // Load level data into Level struct
     void LoadLevel(int levelId)
     {
         XmlParser.GetLevel(levelId, ref currentLevel);
         nextHazard = (Hazard)currentLevel.levelArray[0];
     }
 
-
+    // Spawn all objects for specified Hazard
     void SpawnHazard(Hazard hazard)
     {
         for (int objectIndex = 0; objectIndex < hazard.hazardObjects.Count; ++objectIndex)
@@ -148,6 +191,7 @@ public class GameController : MonoBehaviour
 
             HazardObject tempHazardObject = (HazardObject)hazard.hazardObjects[objectIndex];
 
+            // Gets origin side and adjusts spawn rotation
             switch (tempHazardObject.spawnSide)
             {
                 case "top":
@@ -176,7 +220,27 @@ public class GameController : MonoBehaviour
             }
             Quaternion spawnQuaternion = Quaternion.Euler(spawnRotation);
 
+            // Instantiate object at right position and rotation
             GameObject instance = Instantiate(Resources.Load(tempHazardObject.objectName, typeof(GameObject)), spawnPosition, spawnQuaternion) as GameObject;
+
+            if (tempHazardObject.color != null)
+            {
+                Color newColor;
+                ColorUtility.TryParseHtmlString("#"+tempHazardObject.color, out newColor);
+                instance.GetComponent<MeshRenderer>().material.SetColor("_Color", newColor);
+            }
+
+            if (tempHazardObject.speed > 0)
+            {
+                instance.GetComponent<SimpleMove>().speed = tempHazardObject.speed;
+            }
+
+            if ( (tempHazardObject.rotation > 0) && (instance.GetComponent<SimpleRotator>() != null) )
+            {
+                instance.GetComponent<SimpleRotator>().speed = tempHazardObject.rotation;
+            }
+
+
         }
     }
     
@@ -185,29 +249,41 @@ public class GameController : MonoBehaviour
     {
         if (gameStarted)
         {
+            // Get song timer
             songTimer = audioSource.time;
+
+            // If song timer on a beat, call Beat()
             if (isPlaying && (songTimer - (currentLevel.offset / 1000.0) > (beatIndex * 60.0F / currentLevel.bpm)))
             {
-                ++beatIndex;
+                beatIndex  += 0.25F;
                 StartCoroutine("Beat");
-                StartCoroutine("ChangeSpot");
-                beatCounterText.text = beatIndex.ToString();
+                if (beatIndex % 1 == 0)
+                {
+                    StartCoroutine("ChangeSpot");
+                    //StartCoroutine("CameraEffect");
+                    beatCounterText.text = beatIndex.ToString();
+                }
             }
+    
+            // If end of song, end game
             else if (!isPlaying && !audioSource.isPlaying)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+ 
             }
         }
     }
 
 
+    // Called on a beat
     IEnumerator Beat()
     {
+        // If no more hazards to spawn, end beat detector
         if (hazardNumber > currentLevel.levelArray.Count - 2)
         {
             Debug.Log("End");
             isPlaying = false;
         }
+        // Else, spawn Hazard and increment Hazard index
         else if (nextHazard.bar <= beatIndex)
         {
             SpawnHazard(nextHazard);
@@ -217,7 +293,7 @@ public class GameController : MonoBehaviour
         yield return null;
     }
     
-
+    // Spotlights effect
     IEnumerator ChangeSpot()
     {
         if (redSpot.isActiveAndEnabled)
@@ -231,40 +307,67 @@ public class GameController : MonoBehaviour
             whiteSpot.enabled = false;
         }
         
-
         yield return null;
     }
 
 
+    // TODO Camera effect on beat
+    IEnumerator CameraEffect()
+    {
+       
+        yield return null;
+    }
+
+
+   // When a player is hurt and gets immunity
     IEnumerator Hurt()
     {
-      
-        // TODO flash red when hurt
+        Color playerColor = playerMaterial.GetColor("_Color");
+        Color tempColor = new Color(playerColor.r, playerColor.g, playerColor.b, 0F);
+        playerMaterial.SetColor("_Color", tempColor);
+   
+        yield return new WaitForSeconds(immunityTime);
 
-        yield return null;
+        tempColor = new Color(playerColor.r, playerColor.g, playerColor.b, 1F);
+        playerMaterial.SetColor("_Color", tempColor);
+
+        immunity = false;
     }
     
 
+    // Remove life and detect Death case
     public void RemoveLife()
     {
-        --lives;
-        
-        if (lives < 0)
+        if (!immunity)
         {
-            Death();
+            --lives;
+
+            if (lives < 1)
+            {
+                Death();
+            }
+
+            livesText.text = lives.ToString();
+            immunity = true;
+
+            StartCoroutine("Hurt");
+
         }
 
-        StartCoroutine("Hurt");
-
-        livesText.text = lives.ToString();
     }
 
 
+    // TODO Loss screen, retry/go to menu option
     void Death()
     {
+        isPlaying = false;
+        audioSource.Stop();
+       
         lives = startLives;
         livesText.text = lives.ToString();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Destroy(playerInstance);
+        Cursor.visible = true;
+        StartCoroutine(DragMenu(endMenuPanel, new Vector3(0, 0, 0), 2.0F));
     }
 
 

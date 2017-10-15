@@ -2,180 +2,337 @@
 <level>
   <levelInfo>
     <id>1</id>
-    <name>LevelTwo</name>
-    <bpm>128.0</bpm>
-    <offset>100</offset>
-    <audioFile>Une Canette</audioFile>
+    <name>Level Two</name>
+    <bpm>174.0</bpm>
+    <offset>10800</offset>
+    <audioFile>Princess Of Zion</audioFile>
   </levelInfo>
 
   <hazardList>
-    <!-- LEFT -->
+    <!-- 4-BAR START -->
 
     <hazard bar="0.0">
       <object>
         <objectName>Cube</objectName>
-
-        <spawnSide>left</spawnSide>
-
+        <spawnSide>top</spawnSide>
         <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    </hazard>
+
+    <hazard bar="0.5">
+      <object>
+        <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
       </object>
     </hazard>
 
     <hazard bar="1.0">
       <object>
         <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    </hazard>
 
-        <spawnSide>left</spawnSide>
-
-        <spawnPosition>-1.5</spawnPosition>
+    <hazard bar="1.5">
+      <object>
+        <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
       </object>
     </hazard>
 
     <hazard bar="2.0">
       <object>
         <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    </hazard>
 
-        <spawnSide>left</spawnSide>
-
-        <spawnPosition>1.5</spawnPosition>
+     <hazard bar="2.5">
+      <object>
+        <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
       </object>
     </hazard>
 
     <hazard bar="3.0">
       <object>
-        <objectName>Cube</objectName>
-
-        <spawnSide>left</spawnSide>
-
-        <spawnPosition>4.5</spawnPosition>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
       </object>
     </hazard>
 
-    <!-- TOP -->
+     <hazard bar="3.5">
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    </hazard>
 
-    <hazard bar="4.0">
+  <hazard bar="4.0">
       <object>
         <objectName>Cube</objectName>
-
         <spawnSide>top</spawnSide>
-
         <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    </hazard>
+
+    <hazard bar="4.5">
+      <object>
+        <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
       </object>
     </hazard>
 
     <hazard bar="5.0">
       <object>
         <objectName>Cube</objectName>
-
         <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    </hazard>
 
-        <spawnPosition>-1.5</spawnPosition>
+    <hazard bar="5.5">
+      <object>
+        <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
       </object>
     </hazard>
 
     <hazard bar="6.0">
       <object>
         <objectName>Cube</objectName>
-
         <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    </hazard>
 
-        <spawnPosition>1.5</spawnPosition>
+     <hazard bar="6.5">
+      <object>
+        <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
       </object>
     </hazard>
 
     <hazard bar="7.0">
       <object>
-        <objectName>Cube</objectName>
-
+       <objectName>Cube</objectName>
         <spawnSide>top</spawnSide>
-
-        <spawnPosition>4.5</spawnPosition>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
       </object>
     </hazard>
 
-    <!-- RIGHT -->
+     <hazard bar="7.5">
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    </hazard>
 
-    <hazard bar="8.0">
+
+  <hazard bar="8.0">
       <object>
         <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    </hazard>
 
-        <spawnSide>right</spawnSide>
-
-        <spawnPosition>4.5</spawnPosition>
+    <hazard bar="8.5">
+      <object>
+        <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
       </object>
     </hazard>
 
     <hazard bar="9.0">
       <object>
         <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    </hazard>
 
-        <spawnSide>right</spawnSide>
-
-        <spawnPosition>1.5</spawnPosition>
+    <hazard bar="9.5">
+      <object>
+        <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
       </object>
     </hazard>
 
     <hazard bar="10.0">
       <object>
         <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    </hazard>
 
-        <spawnSide>right</spawnSide>
-
-        <spawnPosition>-1.5</spawnPosition>
+     <hazard bar="10.5">
+      <object>
+        <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
       </object>
     </hazard>
 
     <hazard bar="11.0">
       <object>
-        <objectName>Cube</objectName>
-
-        <spawnSide>right</spawnSide>
-
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
         <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
       </object>
     </hazard>
 
-    <!-- BOTTOM -->
+     <hazard bar="11.5">
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    </hazard>
 
-    <hazard bar="12.0">
+      <hazard bar="12.0">
       <object>
         <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    </hazard>
 
-        <spawnSide>bottom</spawnSide>
-
-        <spawnPosition>4.5</spawnPosition>
+    <hazard bar="12.5">
+      <object>
+        <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
       </object>
     </hazard>
 
     <hazard bar="13.0">
       <object>
         <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    </hazard>
 
-        <spawnSide>bottom</spawnSide>
-
-        <spawnPosition>1.5</spawnPosition>
+    <hazard bar="13.5">
+      <object>
+        <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
       </object>
     </hazard>
 
     <hazard bar="14.0">
       <object>
         <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    </hazard>
 
-        <spawnSide>bottom</spawnSide>
-
-        <spawnPosition>-1.5</spawnPosition>
+     <hazard bar="14.5">
+      <object>
+        <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
       </object>
     </hazard>
 
     <hazard bar="15.0">
       <object>
-        <objectName>Cube</objectName>
-
-        <spawnSide>bottom</spawnSide>
-
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
         <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
       </object>
     </hazard>
+
+     <hazard bar="15.5">
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    </hazard>
+
+
 
     <!-- LEFT -->
 

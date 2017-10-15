@@ -8,7 +8,7 @@ public class XmlParser : MonoBehaviour {
     static public void GetLevel(int levelId, ref GameController.Level levelToLoad)
     {
         Debug.Log("GET LEVEL");
-        XmlDocument xmlDoc = LoadXMLFromAsset("Level" + levelId.ToString() + ".xml");
+        XmlDocument xmlDoc = LoadXMLFromAsset("Level" + levelId.ToString());
         ParseLevel(xmlDoc, ref levelToLoad);
     }
     
@@ -16,25 +16,11 @@ public class XmlParser : MonoBehaviour {
     static private XmlDocument LoadXMLFromAsset(string fileName)
     {
         XmlDocument xmlDoc = new XmlDocument();
-        if (System.IO.File.Exists(GetPath(fileName)))
-        {
-            xmlDoc.LoadXml(System.IO.File.ReadAllText(GetPath(fileName)));
-        }
-        else
-        {
-            TextAsset textXml = (TextAsset)Resources.Load(fileName, typeof(TextAsset));
-            xmlDoc.LoadXml(textXml.text);
-        }
+        TextAsset textAsset = (TextAsset)Resources.Load(fileName);
+        xmlDoc.LoadXml(textAsset.text);
         return xmlDoc;
     }
 
-
-    static private string GetPath(string fileName)
-    {
-        #if UNITY_EDITOR
-        return Application.dataPath + "/Resources/" + fileName;
-        #endif
-    }
 
 
     static private void ParseLevel(XmlDocument xmlDoc, ref GameController.Level levelToLoad)
@@ -94,6 +80,13 @@ public class XmlParser : MonoBehaviour {
 
                 GameController.HazardObject tempHazardObject = new GameController.HazardObject();
 
+                tempHazardObject.objectName = "Cube";
+                tempHazardObject.spawnSide = "top";
+                tempHazardObject.spawnPosition = 0;
+                tempHazardObject.speed = 0;
+                tempHazardObject.rotation = 0;
+                tempHazardObject.color = null;
+
                 foreach (XmlElement objectElement in hazardObject)
                 {
                     switch (objectElement.Name)
@@ -108,6 +101,21 @@ public class XmlParser : MonoBehaviour {
 
                         case "spawnPosition":
                             tempHazardObject.spawnPosition = float.Parse(objectElement.InnerText);
+                            break;
+
+                        case "speed":
+                            tempHazardObject.speed = float.Parse(objectElement.InnerText);
+                            break;
+
+                        case "rotation":
+                            tempHazardObject.rotation = float.Parse(objectElement.InnerText);
+                            break;
+
+                        case "color":
+                            tempHazardObject.color = objectElement.InnerText;
+                            break;
+
+                        default:
                             break;
                     }
                 }
