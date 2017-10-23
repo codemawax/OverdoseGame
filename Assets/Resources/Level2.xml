@@ -337,182 +337,606 @@
     <!-- LEFT -->
 
     <hazard bar="16.0">
-      <object>
-        <objectName>Cube</objectName>
 
-        <spawnSide>left</spawnSide>
-
+	<object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
         <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
+      </object>
+    </hazard>
+
+    <hazard bar="16.5">
+
+	<object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
       </object>
     </hazard>
 
     <hazard bar="17.0">
       <object>
-        <objectName>Cube</objectName>
-
-        <spawnSide>left</spawnSide>
-
-        <spawnPosition>-1.5</spawnPosition>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
       </object>
     </hazard>
 
-    <hazard bar="18.0">
+        <hazard bar="17.5">
       <object>
-        <objectName>Cube</objectName>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
+      </object>
+    </hazard>
 
-        <spawnSide>left</spawnSide>
 
-        <spawnPosition>1.5</spawnPosition>
+    <hazard bar="18.0">
+     <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
+      </object>
+    </hazard>
+
+      <hazard bar="18.5">
+     <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
       </object>
     </hazard>
 
     <hazard bar="19.0">
+     <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
       <object>
-        <objectName>Cube</objectName>
-
-        <spawnSide>left</spawnSide>
-
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
         <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
       </object>
     </hazard>
+
+       <hazard bar="19.5">
+     <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
+      </object>
+    </hazard>
+
 
     <!-- TOP -->
 
     <hazard bar="20.0">
       <object>
-        <objectName>Cube</objectName>
-
+       <objectName>Cube</objectName>
         <spawnSide>top</spawnSide>
-
         <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
       </object>
     </hazard>
+
+    <hazard bar="20.5">
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
+      </object>
+    </hazard>
+
 
     <hazard bar="21.0">
       <object>
-        <objectName>Cube</objectName>
-
+       <objectName>Cube</objectName>
         <spawnSide>top</spawnSide>
-
-        <spawnPosition>-1.5</spawnPosition>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
       </object>
     </hazard>
+
+       <hazard bar="21.5">
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
+      </object>
+    </hazard>
+
 
     <hazard bar="22.0">
       <object>
-        <objectName>Cube</objectName>
-
+       <objectName>Cube</objectName>
         <spawnSide>top</spawnSide>
-
-        <spawnPosition>1.5</spawnPosition>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
       </object>
     </hazard>
+
+       <hazard bar="22.5">
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
+      </object>
+    </hazard>
+
 
     <hazard bar="23.0">
       <object>
-        <objectName>Cube</objectName>
-
+       <objectName>Cube</objectName>
         <spawnSide>top</spawnSide>
-
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
         <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
       </object>
     </hazard>
+
+       <hazard bar="23.5">
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
+      </object>
+    </hazard>
+
 
     <!-- RIGHT -->
 
     <hazard bar="24.0">
       <object>
-        <objectName>Cube</objectName>
-
-        <spawnSide>right</spawnSide>
-
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
         <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
       </object>
     </hazard>
+
+       <hazard bar="24.5">
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
+      </object>
+    </hazard>
+
 
     <hazard bar="25.0">
+     <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
       <object>
-        <objectName>Cube</objectName>
-
-        <spawnSide>right</spawnSide>
-
-        <spawnPosition>1.5</spawnPosition>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
       </object>
     </hazard>
+
+       <hazard bar="25.5">
+     <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
+      </object>
+    </hazard>
+
 
     <hazard bar="26.0">
       <object>
-        <objectName>Cube</objectName>
-
-        <spawnSide>right</spawnSide>
-
-        <spawnPosition>-1.5</spawnPosition>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
       </object>
     </hazard>
+
+        <hazard bar="26.5">
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
+      </object>
+    </hazard>
+
 
     <hazard bar="27.0">
       <object>
-        <objectName>Cube</objectName>
-
-        <spawnSide>right</spawnSide>
-
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
         <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
       </object>
     </hazard>
+
+        <hazard bar="27.5">
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
+      </object>
+    </hazard>
+
 
     <!-- BOTTOM -->
 
     <hazard bar="28.0">
       <object>
-        <objectName>Cube</objectName>
-
-        <spawnSide>bottom</spawnSide>
-
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
         <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
       </object>
     </hazard>
+
+      <hazard bar="28.5">
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
+      </object>
+    </hazard>
+
 
     <hazard bar="29.0">
       <object>
-        <objectName>Cube</objectName>
-
-        <spawnSide>bottom</spawnSide>
-
-        <spawnPosition>1.5</spawnPosition>
-      </object>
-    </hazard>
-
-    <hazard bar="30.0">
-      <object>
-        <objectName>Cube</objectName>
-
-        <spawnSide>bottom</spawnSide>
-
-        <spawnPosition>-1.5</spawnPosition>
-      </object>
-    </hazard>
-
-    <hazard bar="30.0">
-      <object>
-        <objectName>Cube</objectName>
-
-        <spawnSide>bottom</spawnSide>
-
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
         <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
       </object>
     </hazard>
 
-    <!-- LEFT -->
+      <hazard bar="29.5">
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
+      </object>
+    </hazard>
+
+
+    <hazard bar="30.0">
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
+      </object>
+    </hazard>
+
+        <hazard bar="30.5">
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
+      </object>
+    </hazard>
+
 
     <hazard bar="31.0">
       <object>
-        <objectName>Cube</objectName>
-
-        <spawnSide>left</spawnSide>
-
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
         <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
       </object>
     </hazard>
+
+        <hazard bar="31.5">
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>-4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFD700</color>
+      </object>
+    
+      <object>
+       <objectName>Cube</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>4.5</spawnPosition>
+        <speed>5</speed>
+        <color>FFBFFF</color>
+      </object>
+    </hazard>
+
+
+
+
+ <!-- LEFT -->
 
     <hazard bar="32.0">
       <object>
@@ -520,13 +944,7 @@
 
         <spawnSide>left</spawnSide>
 
-        <spawnPosition>-1.5</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Follower</objectName>
-        <spawnSide>top</spawnSide>
-        <spawnPosition>0</spawnPosition>
+        <spawnPosition>-4.5</spawnPosition>
       </object>
     </hazard>
 
@@ -536,11 +954,27 @@
 
         <spawnSide>left</spawnSide>
 
-        <spawnPosition>1.5</spawnPosition>
+        <spawnPosition>-1.5</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Follower</objectName>
+        <spawnSide>top</spawnSide>
+        <spawnPosition>0</spawnPosition>
       </object>
     </hazard>
 
     <hazard bar="34.0">
+      <object>
+        <objectName>Cube</objectName>
+
+        <spawnSide>left</spawnSide>
+
+        <spawnPosition>1.5</spawnPosition>
+      </object>
+    </hazard>
+
+    <hazard bar="35.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -558,7 +992,7 @@
 
     <!-- TOP -->
 
-    <hazard bar="35.0">
+    <hazard bar="36.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -568,7 +1002,7 @@
       </object>
     </hazard>
 
-    <hazard bar="36.0">
+    <hazard bar="37.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -584,7 +1018,7 @@
       </object>
     </hazard>
 
-    <hazard bar="37.0">
+    <hazard bar="38.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -594,7 +1028,7 @@
       </object>
     </hazard>
 
-    <hazard bar="38.0">
+    <hazard bar="39.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -613,7 +1047,7 @@
 
     <!-- RIGHT -->
 
-    <hazard bar="39.0">
+    <hazard bar="40.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -623,7 +1057,7 @@
       </object>
     </hazard>
 
-    <hazard bar="40.0">
+    <hazard bar="41.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -641,7 +1075,7 @@
       </object>
     </hazard>
 
-    <hazard bar="41.0">
+    <hazard bar="42.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -651,7 +1085,7 @@
       </object>
     </hazard>
 
-    <hazard bar="42.0">
+    <hazard bar="43.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -669,7 +1103,7 @@
 
     <!-- BOTTOM -->
 
-    <hazard bar="43.0">
+    <hazard bar="44.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -679,7 +1113,7 @@
       </object>
     </hazard>
 
-    <hazard bar="44.0">
+    <hazard bar="45.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -695,7 +1129,7 @@
       </object>
     </hazard>
 
-    <hazard bar="45.0">
+    <hazard bar="46.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -705,7 +1139,7 @@
       </object>
     </hazard>
 
-    <hazard bar="46.0">
+    <hazard bar="47.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -723,7 +1157,7 @@
 
     <!-- LEFT -->
 
-    <hazard bar="47.0">
+    <hazard bar="48.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -733,7 +1167,7 @@
       </object>
     </hazard>
 
-    <hazard bar="48.0">
+    <hazard bar="49.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -756,7 +1190,7 @@
 
     </hazard>
 
-    <hazard bar="49.0">
+    <hazard bar="50.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -766,7 +1200,7 @@
       </object>
     </hazard>
 
-    <hazard bar="50.0">
+    <hazard bar="51.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -789,7 +1223,7 @@
 
     <!-- TOP -->
 
-    <hazard bar="51.0">
+    <hazard bar="52.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -799,7 +1233,7 @@
       </object>
     </hazard>
 
-    <hazard bar="52.0">
+    <hazard bar="53.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -809,7 +1243,7 @@
       </object>
     </hazard>
 
-    <hazard bar="53.0">
+    <hazard bar="54.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -819,7 +1253,7 @@
       </object>
     </hazard>
 
-    <hazard bar="54.0">
+    <hazard bar="55.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -831,7 +1265,7 @@
 
     <!-- RIGHT -->
 
-    <hazard bar="55.0">
+    <hazard bar="56.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -841,7 +1275,7 @@
       </object>
     </hazard>
 
-    <hazard bar="56.0">
+    <hazard bar="57.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -851,7 +1285,7 @@
       </object>
     </hazard>
 
-    <hazard bar="57.0">
+    <hazard bar="58.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -861,7 +1295,7 @@
       </object>
     </hazard>
 
-    <hazard bar="58.0">
+    <hazard bar="59.0">
       <object>
         <objectName>Cube</objectName>
 
@@ -872,9 +1306,6 @@
     </hazard>
 
     <!-- BOTTOM -->
-
-    <hazard bar="59.0">
-    </hazard>
 
     <hazard bar="60.0">
     </hazard>
@@ -885,147 +1316,150 @@
     <hazard bar="62.0">
     </hazard>
 
-    <!-- REFRAIN -->
-
     <hazard bar="63.0">
     </hazard>
 
+    <!-- REFRAIN -->
+
     <hazard bar="64.0">
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>top</spawnSide>
-
-        <spawnPosition>4</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>top</spawnSide>
-
-        <spawnPosition>2</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>top</spawnSide>
-
-        <spawnPosition>0</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>top</spawnSide>
-
-        <spawnPosition>-2</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>top</spawnSide>
-
-        <spawnPosition>-4</spawnPosition>
-      </object>
     </hazard>
 
     <hazard bar="65.0">
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>top</spawnSide>
+
+        <spawnPosition>4</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>top</spawnSide>
+
+        <spawnPosition>2</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>top</spawnSide>
+
+        <spawnPosition>0</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>top</spawnSide>
+
+        <spawnPosition>-2</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>top</spawnSide>
+
+        <spawnPosition>-4</spawnPosition>
+      </object>
     </hazard>
 
     <hazard bar="66.0">
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>right</spawnSide>
-
-        <spawnPosition>4</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>right</spawnSide>
-
-        <spawnPosition>2</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>right</spawnSide>
-
-        <spawnPosition>0</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>right</spawnSide>
-
-        <spawnPosition>-2</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>right</spawnSide>
-
-        <spawnPosition>-4</spawnPosition>
-      </object>
     </hazard>
 
     <hazard bar="67.0">
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>right</spawnSide>
+
+        <spawnPosition>4</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>right</spawnSide>
+
+        <spawnPosition>2</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>right</spawnSide>
+
+        <spawnPosition>0</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>right</spawnSide>
+
+        <spawnPosition>-2</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>right</spawnSide>
+
+        <spawnPosition>-4</spawnPosition>
+      </object>
     </hazard>
 
     <hazard bar="68.0">
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>bottom</spawnSide>
-
-        <spawnPosition>4</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>bottom</spawnSide>
-
-        <spawnPosition>2</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>bottom</spawnSide>
-
-        <spawnPosition>0</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>bottom</spawnSide>
-
-        <spawnPosition>-2</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>bottom</spawnSide>
-
-        <spawnPosition>-4</spawnPosition>
-      </object>
     </hazard>
 
     <hazard bar="69.0">
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>bottom</spawnSide>
+
+        <spawnPosition>4</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>bottom</spawnSide>
+
+        <spawnPosition>2</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>bottom</spawnSide>
+
+        <spawnPosition>0</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>bottom</spawnSide>
+
+        <spawnPosition>-2</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>bottom</spawnSide>
+
+        <spawnPosition>-4</spawnPosition>
+      </object>
     </hazard>
 
     <hazard bar="70.0">
+    </hazard>
+
+    <hazard bar="71.0">
       <object>
         <objectName>Rod</objectName>
 
@@ -1069,100 +1503,100 @@
 
     <!-- REFRAIN -->
 
-    <hazard bar="71.0">
-    </hazard>
-
     <hazard bar="72.0">
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>top</spawnSide>
-
-        <spawnPosition>4</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>top</spawnSide>
-
-        <spawnPosition>2</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>top</spawnSide>
-
-        <spawnPosition>0</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>top</spawnSide>
-
-        <spawnPosition>-2</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>top</spawnSide>
-
-        <spawnPosition>-4</spawnPosition>
-      </object>
     </hazard>
 
     <hazard bar="73.0">
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>top</spawnSide>
+
+        <spawnPosition>4</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>top</spawnSide>
+
+        <spawnPosition>2</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>top</spawnSide>
+
+        <spawnPosition>0</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>top</spawnSide>
+
+        <spawnPosition>-2</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>top</spawnSide>
+
+        <spawnPosition>-4</spawnPosition>
+      </object>
     </hazard>
 
     <hazard bar="74.0">
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>right</spawnSide>
-
-        <spawnPosition>4</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>right</spawnSide>
-
-        <spawnPosition>2</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>right</spawnSide>
-
-        <spawnPosition>0</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>right</spawnSide>
-
-        <spawnPosition>-2</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>right</spawnSide>
-
-        <spawnPosition>-4</spawnPosition>
-      </object>
     </hazard>
 
     <hazard bar="75.0">
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>right</spawnSide>
+
+        <spawnPosition>4</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>right</spawnSide>
+
+        <spawnPosition>2</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>right</spawnSide>
+
+        <spawnPosition>0</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>right</spawnSide>
+
+        <spawnPosition>-2</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>right</spawnSide>
+
+        <spawnPosition>-4</spawnPosition>
+      </object>
     </hazard>
 
     <hazard bar="76.0">
+    </hazard>
+
+    <hazard bar="77.0">
       <object>
         <objectName>Rod</objectName>
 
@@ -1204,10 +1638,10 @@
       </object>
     </hazard>
 
-    <hazard bar="77.0">
+    <hazard bar="78.0">
     </hazard>
 
-    <hazard bar="78.0">
+    <hazard bar="79.0">
       <object>
         <objectName>Rod</objectName>
 
@@ -1251,100 +1685,100 @@
 
     <!-- REFRAIN -->
 
-    <hazard bar="79.0">
-    </hazard>
-
     <hazard bar="80.0">
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>top</spawnSide>
-
-        <spawnPosition>4</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>top</spawnSide>
-
-        <spawnPosition>2</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>top</spawnSide>
-
-        <spawnPosition>0</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>top</spawnSide>
-
-        <spawnPosition>-2</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>top</spawnSide>
-
-        <spawnPosition>-4</spawnPosition>
-      </object>
     </hazard>
 
     <hazard bar="81.0">
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>top</spawnSide>
+
+        <spawnPosition>4</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>top</spawnSide>
+
+        <spawnPosition>2</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>top</spawnSide>
+
+        <spawnPosition>0</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>top</spawnSide>
+
+        <spawnPosition>-2</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>top</spawnSide>
+
+        <spawnPosition>-4</spawnPosition>
+      </object>
     </hazard>
 
     <hazard bar="82.0">
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>right</spawnSide>
-
-        <spawnPosition>4</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>right</spawnSide>
-
-        <spawnPosition>2</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>right</spawnSide>
-
-        <spawnPosition>0</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>right</spawnSide>
-
-        <spawnPosition>-2</spawnPosition>
-      </object>
-
-      <object>
-        <objectName>Rod</objectName>
-
-        <spawnSide>right</spawnSide>
-
-        <spawnPosition>-4</spawnPosition>
-      </object>
     </hazard>
 
     <hazard bar="83.0">
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>right</spawnSide>
+
+        <spawnPosition>4</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>right</spawnSide>
+
+        <spawnPosition>2</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>right</spawnSide>
+
+        <spawnPosition>0</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>right</spawnSide>
+
+        <spawnPosition>-2</spawnPosition>
+      </object>
+
+      <object>
+        <objectName>Rod</objectName>
+
+        <spawnSide>right</spawnSide>
+
+        <spawnPosition>-4</spawnPosition>
+      </object>
     </hazard>
 
     <hazard bar="84.0">
+    </hazard>
+
+    <hazard bar="85.0">
       <object>
         <objectName>Rod</objectName>
 
@@ -1386,10 +1820,10 @@
       </object>
     </hazard>
 
-    <hazard bar="85.0">
+    <hazard bar="86.0">
     </hazard>
 
-    <hazard bar="86.0">
+    <hazard bar="87.0">
       <object>
         <objectName>Rod</objectName>
         <spawnSide>left</spawnSide>
@@ -1424,10 +1858,10 @@
 
       <!--REFRAIN-->
 
-      <hazard bar="87.0">
+      <hazard bar="88.0">
       </hazard>
 
-      <hazard bar="88.0">
+      <hazard bar="89.0">
       <object>
         <objectName>Follower</objectName>
         <spawnSide>bottom</spawnSide>
@@ -1435,10 +1869,10 @@
       </object>
       </hazard>
 
-      <hazard bar="89.0">
+      <hazard bar="90.0">
       </hazard>
 
-      <hazard bar="90.0">
+      <hazard bar="91.0">
       <object>
         <objectName>Follower</objectName>
         <spawnSide>top</spawnSide>
@@ -1446,10 +1880,10 @@
       </object>
       </hazard>
 
-      <hazard bar="91.0">
+      <hazard bar="92.0">
       </hazard>
 
-  <hazard bar="92.0">
+  <hazard bar="93.0">
   <object>
     <objectName>Follower</objectName>
     <spawnSide>bottom</spawnSide>
@@ -1457,12 +1891,12 @@
   </object>
   </hazard>
 
-  <hazard bar="93.0">
+  <hazard bar="94.0">
 
   </hazard>
 
 
-  <hazard bar="94.0">
+  <hazard bar="95.0">
   <object>
     <objectName>Follower</objectName>
     <spawnSide>top</spawnSide>
@@ -1473,10 +1907,10 @@
 
 <!--REFRAIN-->
 
-<hazard bar="95.0">
+<hazard bar="96.0">
 </hazard>
 
-<hazard bar="96.0">
+<hazard bar="97.0">
 <object>
   <objectName>Follower</objectName>
   <spawnSide>bottom</spawnSide>
@@ -1484,10 +1918,10 @@
 </object>
 </hazard>
 
-<hazard bar="97.0">
+<hazard bar="98.0">
 </hazard>
 
-<hazard bar="98.0">
+<hazard bar="99.0">
 <object>
   <objectName>Follower</objectName>
   <spawnSide>top</spawnSide>
@@ -1495,10 +1929,10 @@
 </object>
 </hazard>
 
-<hazard bar="99.0">
+<hazard bar="100.0">
 </hazard>
 
-<hazard bar="100.0">
+<hazard bar="101.0">
 <object>
 <objectName>Follower</objectName>
 <spawnSide>bottom</spawnSide>
@@ -1506,12 +1940,12 @@
 </object>
 </hazard>
 
-<hazard bar="101.0">
+<hazard bar="102.0">
 
 </hazard>
 
 
-<hazard bar="102.0">
+<hazard bar="103.0">
 <object>
 <objectName>Follower</objectName>
 <spawnSide>top</spawnSide>
@@ -1521,10 +1955,6 @@
 
 
 <!--CANETTE-->
-
-<hazard bar="103.0">
-
-</hazard>
 
 <hazard bar="104.0">
 
@@ -1554,183 +1984,183 @@
 
 </hazard>
 
-<!--CANETTE-->
-
 <hazard bar="111.0">
-
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>top</spawnSide>
-  <spawnPosition>-4</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>top</spawnSide>
-  <spawnPosition>-3</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>top</spawnSide>
-  <spawnPosition>-2</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>top</spawnSide>
-  <spawnPosition>-1</spawnPosition>
-  </object>
-
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>top</spawnSide>
-  <spawnPosition>1</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>top</spawnSide>
-  <spawnPosition>2</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>top</spawnSide>
-  <spawnPosition>3</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>top</spawnSide>
-  <spawnPosition>4</spawnPosition>
-  </object>
-
-
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>right</spawnSide>
-  <spawnPosition>-4</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>right</spawnSide>
-  <spawnPosition>-3</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>right</spawnSide>
-  <spawnPosition>-2</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>right</spawnSide>
-  <spawnPosition>-1</spawnPosition>
-  </object>
-
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>right</spawnSide>
-  <spawnPosition>1</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>right</spawnSide>
-  <spawnPosition>2</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>right</spawnSide>
-  <spawnPosition>3</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>right</spawnSide>
-  <spawnPosition>4</spawnPosition>
-  </object>
-
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>left</spawnSide>
-  <spawnPosition>-4</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>left</spawnSide>
-  <spawnPosition>-3</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>left</spawnSide>
-  <spawnPosition>-2</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>left</spawnSide>
-  <spawnPosition>-1</spawnPosition>
-  </object>
-
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>left</spawnSide>
-  <spawnPosition>1</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>left</spawnSide>
-  <spawnPosition>2</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>left</spawnSide>
-  <spawnPosition>3</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>left</spawnSide>
-  <spawnPosition>4</spawnPosition>
-  </object>
-
-
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>bottom</spawnSide>
-  <spawnPosition>-4</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>bottom</spawnSide>
-  <spawnPosition>-3</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>bottom</spawnSide>
-  <spawnPosition>-2</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>bottom</spawnSide>
-  <spawnPosition>-1</spawnPosition>
-  </object>
-
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>bottom</spawnSide>
-  <spawnPosition>1</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>bottom</spawnSide>
-  <spawnPosition>2</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>bottom</spawnSide>
-  <spawnPosition>3</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>bottom</spawnSide>
-  <spawnPosition>4</spawnPosition>
-  </object>
 
 </hazard>
 
+<!--CANETTE-->
+
 <hazard bar="112.0">
+
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>top</spawnSide>
+  <spawnPosition>-4</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>top</spawnSide>
+  <spawnPosition>-3</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>top</spawnSide>
+  <spawnPosition>-2</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>top</spawnSide>
+  <spawnPosition>-1</spawnPosition>
+  </object>
+
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>top</spawnSide>
+  <spawnPosition>1</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>top</spawnSide>
+  <spawnPosition>2</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>top</spawnSide>
+  <spawnPosition>3</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>top</spawnSide>
+  <spawnPosition>4</spawnPosition>
+  </object>
+
+
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>right</spawnSide>
+  <spawnPosition>-4</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>right</spawnSide>
+  <spawnPosition>-3</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>right</spawnSide>
+  <spawnPosition>-2</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>right</spawnSide>
+  <spawnPosition>-1</spawnPosition>
+  </object>
+
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>right</spawnSide>
+  <spawnPosition>1</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>right</spawnSide>
+  <spawnPosition>2</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>right</spawnSide>
+  <spawnPosition>3</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>right</spawnSide>
+  <spawnPosition>4</spawnPosition>
+  </object>
+
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>left</spawnSide>
+  <spawnPosition>-4</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>left</spawnSide>
+  <spawnPosition>-3</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>left</spawnSide>
+  <spawnPosition>-2</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>left</spawnSide>
+  <spawnPosition>-1</spawnPosition>
+  </object>
+
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>left</spawnSide>
+  <spawnPosition>1</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>left</spawnSide>
+  <spawnPosition>2</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>left</spawnSide>
+  <spawnPosition>3</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>left</spawnSide>
+  <spawnPosition>4</spawnPosition>
+  </object>
+
+
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>bottom</spawnSide>
+  <spawnPosition>-4</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>bottom</spawnSide>
+  <spawnPosition>-3</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>bottom</spawnSide>
+  <spawnPosition>-2</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>bottom</spawnSide>
+  <spawnPosition>-1</spawnPosition>
+  </object>
+
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>bottom</spawnSide>
+  <spawnPosition>1</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>bottom</spawnSide>
+  <spawnPosition>2</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>bottom</spawnSide>
+  <spawnPosition>3</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>bottom</spawnSide>
+  <spawnPosition>4</spawnPosition>
+  </object>
 
 </hazard>
 
@@ -1738,11 +2168,11 @@
 
 </hazard>
 
-
-
 <hazard bar="114.0">
 
 </hazard>
+
+
 
 <hazard bar="115.0">
 
@@ -1760,185 +2190,185 @@
 
 </hazard>
 
+<hazard bar="119.0">
+
+</hazard>
+
 <!--CANETTE-->
 
 
 
-<hazard bar="119.0">
-
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>top</spawnSide>
-  <spawnPosition>-4</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>top</spawnSide>
-  <spawnPosition>-3</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>top</spawnSide>
-  <spawnPosition>-2</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>top</spawnSide>
-  <spawnPosition>-1</spawnPosition>
-  </object>
-
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>top</spawnSide>
-  <spawnPosition>1</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>top</spawnSide>
-  <spawnPosition>2</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>top</spawnSide>
-  <spawnPosition>3</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>top</spawnSide>
-  <spawnPosition>4</spawnPosition>
-  </object>
-
-
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>right</spawnSide>
-  <spawnPosition>-4</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>right</spawnSide>
-  <spawnPosition>-3</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>right</spawnSide>
-  <spawnPosition>-2</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>right</spawnSide>
-  <spawnPosition>-1</spawnPosition>
-  </object>
-
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>right</spawnSide>
-  <spawnPosition>1</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>right</spawnSide>
-  <spawnPosition>2</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>right</spawnSide>
-  <spawnPosition>3</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>right</spawnSide>
-  <spawnPosition>4</spawnPosition>
-  </object>
-
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>left</spawnSide>
-  <spawnPosition>-4</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>left</spawnSide>
-  <spawnPosition>-3</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>left</spawnSide>
-  <spawnPosition>-2</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>left</spawnSide>
-  <spawnPosition>-1</spawnPosition>
-  </object>
-
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>left</spawnSide>
-  <spawnPosition>1</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>left</spawnSide>
-  <spawnPosition>2</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>left</spawnSide>
-  <spawnPosition>3</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>left</spawnSide>
-  <spawnPosition>4</spawnPosition>
-  </object>
-
-
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>bottom</spawnSide>
-  <spawnPosition>-4</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>bottom</spawnSide>
-  <spawnPosition>-3</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>bottom</spawnSide>
-  <spawnPosition>-2</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>bottom</spawnSide>
-  <spawnPosition>-1</spawnPosition>
-  </object>
-
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>bottom</spawnSide>
-  <spawnPosition>1</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>bottom</spawnSide>
-  <spawnPosition>2</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>bottom</spawnSide>
-  <spawnPosition>3</spawnPosition>
-  </object>
-  <object>
-  <objectName>Cube</objectName>
-  <spawnSide>bottom</spawnSide>
-  <spawnPosition>4</spawnPosition>
-  </object>
-
-</hazard>
-
 <hazard bar="120.0">
+
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>top</spawnSide>
+  <spawnPosition>-4</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>top</spawnSide>
+  <spawnPosition>-3</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>top</spawnSide>
+  <spawnPosition>-2</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>top</spawnSide>
+  <spawnPosition>-1</spawnPosition>
+  </object>
+
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>top</spawnSide>
+  <spawnPosition>1</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>top</spawnSide>
+  <spawnPosition>2</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>top</spawnSide>
+  <spawnPosition>3</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>top</spawnSide>
+  <spawnPosition>4</spawnPosition>
+  </object>
+
+
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>right</spawnSide>
+  <spawnPosition>-4</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>right</spawnSide>
+  <spawnPosition>-3</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>right</spawnSide>
+  <spawnPosition>-2</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>right</spawnSide>
+  <spawnPosition>-1</spawnPosition>
+  </object>
+
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>right</spawnSide>
+  <spawnPosition>1</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>right</spawnSide>
+  <spawnPosition>2</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>right</spawnSide>
+  <spawnPosition>3</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>right</spawnSide>
+  <spawnPosition>4</spawnPosition>
+  </object>
+
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>left</spawnSide>
+  <spawnPosition>-4</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>left</spawnSide>
+  <spawnPosition>-3</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>left</spawnSide>
+  <spawnPosition>-2</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>left</spawnSide>
+  <spawnPosition>-1</spawnPosition>
+  </object>
+
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>left</spawnSide>
+  <spawnPosition>1</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>left</spawnSide>
+  <spawnPosition>2</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>left</spawnSide>
+  <spawnPosition>3</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>left</spawnSide>
+  <spawnPosition>4</spawnPosition>
+  </object>
+
+
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>bottom</spawnSide>
+  <spawnPosition>-4</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>bottom</spawnSide>
+  <spawnPosition>-3</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>bottom</spawnSide>
+  <spawnPosition>-2</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>bottom</spawnSide>
+  <spawnPosition>-1</spawnPosition>
+  </object>
+
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>bottom</spawnSide>
+  <spawnPosition>1</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>bottom</spawnSide>
+  <spawnPosition>2</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>bottom</spawnSide>
+  <spawnPosition>3</spawnPosition>
+  </object>
+  <object>
+  <objectName>Cube</objectName>
+  <spawnSide>bottom</spawnSide>
+  <spawnPosition>4</spawnPosition>
+  </object>
 
 </hazard>
 
@@ -1965,6 +2395,14 @@
 <hazard bar="126.0">
 
 </hazard>
+
+<hazard bar="127.0">
+
+</hazard>
+
+
+
+    
 
 
 

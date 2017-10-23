@@ -89,9 +89,10 @@ public class GameController : MonoBehaviour
     // Counts how many ".xml" files there are in Resources directory
     public static int LevelCount()
     {
-        DirectoryInfo d = new DirectoryInfo("Assets/Resources");
-        FileInfo[] fis = d.GetFiles("*.xml");
-        return fis.Length;
+        //TODO dynamic count with WebGL
+        //DirectoryInfo d = new DirectoryInfo("Assets/Resources");
+        //FileInfo[] fis = d.GetFiles("*.xml");
+        return 2;
     }
 
     // Adds button to menu panel
@@ -237,7 +238,7 @@ public class GameController : MonoBehaviour
 
             if ( (tempHazardObject.rotation > 0) && (instance.GetComponent<SimpleRotator>() != null) )
             {
-                instance.GetComponent<SimpleRotator>().speed = tempHazardObject.rotation;
+                instance.GetComponent<SimpleRotator>().speed.z = tempHazardObject.rotation;
             }
 
 
@@ -282,6 +283,7 @@ public class GameController : MonoBehaviour
         {
             Debug.Log("End");
             isPlaying = false;
+            BackToMenu();
         }
         // Else, spawn Hazard and increment Hazard index
         else if (nextHazard.bar <= beatIndex)

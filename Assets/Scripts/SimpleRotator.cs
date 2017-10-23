@@ -4,12 +4,13 @@ using System.Collections;
 public class SimpleRotator : MonoBehaviour
 {
 
-    public float speed;
+    public Vector3 speed;
+
     private Rigidbody rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.angularVelocity = Vector3.forward * speed;
+        rb.angularVelocity = speed;
     }
 }
